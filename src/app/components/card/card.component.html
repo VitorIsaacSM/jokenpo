@@ -1,6 +1,15 @@
 <!-- visual da carta -->
 <!-- podendo ser qualquer uma das 3 opcoes -->
-<div>
+<div class="card">
   <!-- imagem da carta -->
   <!-- nome da carta -->
+
+  <img *ngIf="type == types.PEDRA" class="img" src="assets/images/pedra.png" alt="Pedra">
+
+  <img *ngIf="type == types.PAPEL" class="img" src="assets/images/papel.png" alt="Papel">
+
+  <img *ngIf="type == types.TESOURA" class="img" src="assets/images/tesoura.png" alt="Tesoura">
+
+
+  <p>{{name}}</p>
 </div>
